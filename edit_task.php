@@ -14,6 +14,8 @@ if (isset($_GET['id'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Task</title>
+    <link rel="stylesheet" href="index.css">
+
 </head>
 <body>
     <h1>Edit Task</h1>
@@ -29,7 +31,7 @@ if (isset($_GET['id'])) {
             <option value="Pending" <?php echo ($task['status'] == 'Pending') ? 'selected' : ''; ?>>Pending</option>
             <option value="Completed" <?php echo ($task['status'] == 'Completed') ? 'selected' : ''; ?>>Completed</option>
         </select>
-        <input type="submit" value="Update Task">
+        <input class="update_task" type="submit" value="Update Task">
     </form>
 </body>
 </html>
