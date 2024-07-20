@@ -13,7 +13,6 @@
         <h1>Task Manager</h1>
 
         <form action="create_task.php" method="POST">
-            <h2>Create Task</h2>
             <label for="title">Title:</label>
             <input type="text" name="title" id="title" required>
             <label for="description">Description:</label>

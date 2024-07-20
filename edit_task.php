@@ -28,7 +28,8 @@ if (isset($_GET['id'])) {
         <textarea name="description" id="description"><?php echo $task['description']; ?></textarea>
         <label for="status">Status:</label>
         <select name="status" id="status">
-            <option value="Pending" <?php echo ($task['status'] == 'Pending') ? 'selected' : ''; ?>>Pending</option>
+            <option value="to do" <?php echo ($task['status'] == 'to do') ? 'selected' : ''; ?>>to do</option>
+            <option value="in progress" <?php echo ($task['status'] == 'in progress') ? 'selected' : ''; ?>>in progress</option>
             <option value="Completed" <?php echo ($task['status'] == 'Completed') ? 'selected' : ''; ?>>Completed</option>
         </select>
         <input class="update_task" type="submit" value="Update Task">
