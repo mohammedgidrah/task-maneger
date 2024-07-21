@@ -32,9 +32,12 @@
             <?php
             include 'db_connection.php';
             $result = $conn->query("SELECT * FROM tasks");
+            $counter=0;
             while ($row = $result->fetch_assoc()) {
+                $counter++;
                 echo "<tr>
-                    <td>{$row['id']}</td>
+                
+                    <td>{$counter}</td>
                     <td>{$row['title']}</td>
                     <td>{$row['description']}</td>
                     <td>{$row['status']}</td>
